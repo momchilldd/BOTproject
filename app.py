@@ -11,7 +11,7 @@ def index():
 def horoscope():
     date = request.form['date']
     sign = request.form['sign']
-    response = requests.get(f'https://api.example.com/horoscope?date={date}&sign={sign}')  # Replace with a real horoscope API
+    response = requests.get(f'https://horoscopes.azurewebsites.net/horoscope')  # Replace with a real horoscope API
     horoscope_data = response.json()
     return render_template('horoscope.html', horoscope=horoscope_data)
 
