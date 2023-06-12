@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horoscope App</title>
+</head>
+<body>
+    <h1>Horoscope App</h1>
+    <form action="/horoscope" method="post">
+        <label for="date">Birthdate:</label>
+        <input type="date" name="date" id="date" required>
+        <br><br>
+        <label for="sign">Zodiac Sign:</label>
+        <select name="sign" id="sign" required>
+            <option value="aries">Aries</option>
+            <option value="taurus">Taurus</option>
+            <option value="gemini">Gemini</option>
+            <!-- Add other zodiac signs -->
+        </select>
+        <br><br>
+        <input type="submit" value="Get Horoscope">
+    </form>
+</body>
+</html>
